@@ -396,15 +396,15 @@
   .ba-caption .meta{ font-family:var(--mono); font-size:11.5px; color:var(--ink-faint); margin-top:4px; }
 
   /* testimonials */
-  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:48px; }
+  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:48px; align-items:start; }
   @media (max-width:880px){ .testi-grid{ grid-template-columns:1fr; } }
-  .testi-card{ background:var(--bg); padding:32px 28px; display:flex; flex-direction:column; gap:20px; }
-  .testi-card q{ font-family:var(--serif); font-style:italic; font-size:1.12rem; line-height:1.5; quotes:none; color:var(--ink); }
-  .testi-who{ font-family:var(--mono); font-size:12px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:14px; }
+  .testi-card{ background:var(--surface); border:1px solid var(--line-strong); display:flex; flex-direction:column; }
+  .testi-card q{ font-family:var(--serif); font-style:italic; font-size:1.12rem; line-height:1.5; quotes:none; color:var(--ink); display:block; padding:28px 24px 0; }
+  .testi-who{ font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
   .testi-who b{ color:var(--ink-muted); font-weight:500; }
-  .testi-card.is-shot{ padding:0; }
-  .testi-card.is-shot img{ width:100%; display:block; border-bottom:1px solid var(--line); }
-  .testi-card.is-shot .testi-who{ margin:20px 28px 28px; padding-top:14px; }
+  .testi-card img{ width:100%; display:block; }
+  .testi-card .testi-who{ padding:16px 20px; margin-top:auto; border-top:1px solid var(--line); }
+  .testi-card q + .testi-who{ margin-top:20px; }
 
   /* cta / candidatura */
   .cta-section{ background:var(--surface); }
@@ -440,7 +440,7 @@
 <header class="top">
   <div class="wrap">
     <a class="wordmark" href="#top">MÉTODO <b>PACCOLA 4D</b></a>
-    <a class="btn btn-ghost" href="https://paccolaacademy.com.br/captura" target="_blank" rel="noopener">Candidatar-me</a>
+    <a class="btn btn-ghost" href="https://paccolaacademy.com.br/captura">Candidatar-me</a>
   </div>
 </header>
 
@@ -453,7 +453,7 @@
       <p class="hero-sub reveal">A Oportunidade da Década — Um Mercado <em>Sem Fim</em></p>
       <p class="lede reveal">Nenhum procedimento isolado resolve o &ldquo;rosto de Ozempic&rdquo; — porque o emagrecimento rápido esvazia <em>quatro camadas da face ao mesmo tempo</em>. Aprenda a ler a face em 4 dimensões e torne-se a resposta para a demanda que mais cresce no país.</p>
       <div class="btn-row reveal">
-        <a class="btn btn-primary" href="https://paccolaacademy.com.br/captura" target="_blank" rel="noopener">Candidate-se</a>
+        <a class="btn btn-primary" href="https://paccolaacademy.com.br/captura">Candidate-se</a>
       </div>
     </div>
   </section>
@@ -682,7 +682,7 @@
       </div>
 
       <div class="btn-row reveal">
-        <a class="btn btn-primary" href="https://paccolaacademy.com.br/captura" target="_blank" rel="noopener">Candidatar-me à seleção</a>
+        <a class="btn btn-primary" href="https://paccolaacademy.com.br/captura">Candidatar-me à seleção</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/dramayarapaccola/" target="_blank" rel="noopener">Conhecer o trabalho no Instagram</a>
       </div>
     </div>
@@ -699,7 +699,7 @@
 
 <div class="sticky-cta" id="stickyCta">
   <div class="sc-txt"><b>Método Paccola 4D</b>Seleção aberta · vagas limitadas</div>
-  <a href="https://paccolaacademy.com.br/captura" target="_blank" rel="noopener">Candidatar-me</a>
+  <a href="https://paccolaacademy.com.br/captura">Candidatar-me</a>
 </div>
 
 <script>
