@@ -100,6 +100,13 @@
     box-shadow: none;
   }
 
+  :root[data-theme="light"] .stat,
+  :root[data-theme="light"] .promise-card,
+  :root[data-theme="light"] .format-card,
+  :root[data-theme="light"] .step{
+    background: var(--surface);
+  }
+
   *,*::before,*::after{ box-sizing:border-box; }
   html{ background:var(--bg); }
 
@@ -174,6 +181,7 @@
     font-weight:560;
     color:var(--accent);
   }
+  :root[data-theme="light"] em.wine{ color:var(--wine); }
 
   p{ margin:0 0 1.1em; color:var(--ink); }
   p:last-child{ margin-bottom:0; }
@@ -593,7 +601,7 @@
   <section class="market" id="market">
     <div class="wrap col-wide">
       <p class="eyebrow reveal">O mercado</p>
-      <h2 class="reveal">Um mercado de quase 15 milhões de clientes que ainda não existia.</h2>
+      <h2 class="reveal">Um mercado de quase <em class="wine">15 milhões</em> de clientes que ainda não existia.</h2>
       <p class="lede reveal" style="margin-top:22px;">O boom das canetas emagrecedoras não criou só pacientes mais magros. Criou um tipo de rosto e um tipo de paciente que a estética tradicional não foi treinada para atender.</p>
 
       <div class="stat-row">
@@ -638,7 +646,7 @@
   <section class="promise">
     <div class="wrap col-wide">
       <p class="eyebrow reveal">Para você, profissional</p>
-      <h2 class="reveal">Isso não é sobre aprender mais uma técnica.<br>É sobre comprar de volta o seu tempo.</h2>
+      <h2 class="reveal">Isso não é sobre aprender mais uma técnica.<br>É sobre comprar de volta <em class="wine">o seu tempo</em>.</h2>
       <div class="promise-grid">
         <div class="promise-card reveal">
           <div class="tag">Liberdade de tempo</div>
@@ -727,7 +735,7 @@
   <section class="format">
     <div class="wrap col-wide">
       <p class="eyebrow reveal">Formato</p>
-      <h2 class="reveal">12 encontros. Um método, aplicado na prática.</h2>
+      <h2 class="reveal"><em class="wine">12 encontros</em>. Um método, aplicado na prática.</h2>
       <p class="lede reveal" style="margin-top:22px;">Ao vivo e online, para você sair aplicando a leitura das quatro camadas, não só entendendo ela.</p>
 
       <div class="format-grid">
@@ -875,7 +883,7 @@
   <section class="cta-section" id="candidatura">
     <div class="wrap col-wide">
       <p class="eyebrow reveal">Processo de candidatura</p>
-      <h2 class="reveal">Ela não vende vagas.<br>Ela escolhe quem vai carregar o método.</h2>
+      <h2 class="reveal">Ela não vende vagas.<br>Ela <em class="wine">escolhe quem vai carregar</em> o método.</h2>
       <p class="lede reveal" style="margin-top:22px;">As turmas são pequenas de propósito. O acompanhamento de perto só funciona assim. Por isso a entrada é por candidatura, não por compra direta.</p>
 
       <div class="steps">
